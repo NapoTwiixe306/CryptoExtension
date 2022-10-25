@@ -1,0 +1,21 @@
+{
+    "name": "CryptoExtension",
+    "description": "Permet de voir en temps réel le taux d'échange entre pairs de crypto et devs",
+    "version": "0.1.2",
+    "manifest_version": 3,
+    "icons": {
+        "16": "/img/logo.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.google.com/*"],
+            "css": ["./css/style.css"],
+            "js": ["./background.js"]
+        }
+    ],
+    
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {"16": "/img/logo.png"}
+    }
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/d513ed6752.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Css/style.css">
+    <title>Wallet</title>
+    <meta name="Wallet MetaMask de CryptoExtension"
+          content="Ici, vous retrouverez directement votre wallet MetaMask, la suite arrive vite...">
+</head>
+<body>
+<!--== HEADER ==-->
+<header>
+    <a href="../../index.html" class="logo">CryptoExtension</a>
+    <ul class="navigation">
+        <li><a href="./about.html">A Propos</a></li>
+        <li><a href="./download.html">Download</a></li>
+        <li><a href="../../CryptoBlog/index.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+    <div class="search">
+        <input type="text" placeholder="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div>
+        <input type="checkbox" class="checkbox" id="chk"/>
+        <label class="label" for="chk">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+</header>
+
+<!--== CARTE==-->
+<div class="banner">
+    <div class="content">
+        <h2>Wallet MetaMask</h2>
+        <p>Ici, vous retrouverez directement votre wallet MetaMask, la suite arrive vite...</p>
+        <a href="#" id="loginButton" onclick="">Connection avec MetaMask</a>
+        <p id='userWallet' class='text-lg text-gray-600 my-2'></p>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <img class="chip" src="../img/chip.png" alt=""/>
+            <img class="contactless" src="../img/wifi-signal.png" alt=""/>
+            <img class="visa" src="../img/visa.png" alt="">
+            <p id="test" class="card-number"></p>
+            <div class="arrow"></div>
+            <p class="card-name">Ethereum</p>
+            <p class="bank-name">CryptoBank</p>
+        </div>
+    </div>
+</div>
+
+<!--==Trading==-->
+<div class="cont" id="cont">
+    <div class="conte">
+
+        <div class="right-side">
+            <h2>Faire un virement en ETH (bientot dispo)</h2>
+            <p class=>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur adipisci recusandae reprehenderit nesciunt? Consectetur ratione repellat ab aspernatur dignissimos numquam aliquid, cum consequatur quae, quis natus officiis, corrupti adipisci debitis.</p>
+            <form action="#" methode="POST">
+                <div class="input-box">
+                    <input type="text" placeholder="Adresse de la personne" name="name" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="message" name="surname"  required>
+                </div>
+                <div class="input-box">
+                    <input type="number" min="0.0001" max="100" step="0.0001" placeholder="montant" required>
+                </div>
+                <button type="submit" class="bu">Envoyé</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--== FOOTER ==-->
+<footer class="footer">
+    <p class="footer__title">CryptoExtension</p>
+    <div class="footer__social">
+        <a href="https://github.com/NapoTwiixe306" class="footer__icon" target="blank"><i class='fab fa-github'></i></a>
+        <a href="https://www.instagram.com/julien.milants/" class="footer__icon" target="blank"><i
+                class='fab fa-instagram'></i></a>
+        <a href="https://gitlab.com/NapoTwiixe306" class="footer__icon" target="blank"><i class='fab fa-gitlab'></i></a>
+        <a href="https://gitlab.com/NapoTwiixe306" class="footer__icon" target="blank"><i
+                class='fab fa-twitter'></i></a>
+    </div>
+    <p>&#169; <span id="date"></span> copyright all right reserved</p>
+</footer>
+
+<script src="../Js/main.js"></script>
+
+</body>
+</html>
