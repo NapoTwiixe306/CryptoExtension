@@ -104,13 +104,14 @@ header .navigation {
 
 header .navigation li {
     list-style: none;
-    margin: 0 10px;
+    margin: 0 25px;
 }
 
 header .navigation li a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
+    font-size: 1.2em;
     letter-spacing: 1px;
     transition: 0.3s;
 
@@ -163,7 +164,6 @@ header .search .fa-search:hover {
     color: var(--first-color);
     transition: 0.5s;
 }
-
 
 /*== LE TEXTE ==*/
 .banner {
