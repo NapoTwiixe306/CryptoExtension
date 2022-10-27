@@ -114,11 +114,18 @@ header .navigation li a {
     font-size: 1.2em;
     letter-spacing: 1px;
     transition: 0.3s;
+}
 
+header .navigation li.log:hover a{
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
 header .navigation li a:hover {
-    color: rgb(255, 164, 61);
+    color: var(--first-color);
 }
 
 header .search {
