@@ -14,8 +14,8 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: |
-          sudo docker stop cryptoextension
-          sudo docker rm cryptoextension
+          sudo docker stop CryptoExtension
+          sudo docker rm CryptoExtension
 
           cd ~/
           rm -rf CryptoExtension
@@ -28,4 +28,4 @@ jobs:
           git fetch
           git pull origin main
 
-          sudo docker run -d --network="portainer_bridge" --name cryptoextension -v ~/CryptoExtension:/var/www/html php:8.1-apache
+          sudo docker run -d --network="portainer_bridge" --name CryptoExtension -v ~/CryptoExtension:/var/www/html php:8.1-apache
