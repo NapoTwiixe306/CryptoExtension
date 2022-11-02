@@ -28,4 +28,4 @@ jobs:
           git fetch
           git pull origin main
 
-          sudo docker run -d --name cryptoextension -v .:/var/www/html php:8.1-apache
+          sudo docker run -d --name cryptoextension -v ./:/var/www/html php:8.1-apache
