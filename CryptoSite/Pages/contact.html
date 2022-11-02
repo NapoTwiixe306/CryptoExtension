@@ -33,14 +33,24 @@
         </label>
     </div> -->
 </header>
-
-<div class="banner">
+<!--<div class="banner">
     <div class="content">
         <h2>Nous Contacter</h2>
         <p>Tu peut me contracter ici facilement, à l'adresse email suivant</p>
         <a href="mailto:julien.milants@gmail.com?subject=Question, Demandes, ou FeedBack">Envoyé un mail</a>
     </div>
     <img src="../img/gmail.png" alt="" class="image">
+</div>-->
+
+<!--==  CONTACT TEST==-->
+<div class="con">
+    <form class="form" onsubmit="sendEmail(); reset(); return false;">
+        <h3 class="h3">Send Mail</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email Adress" required>
+        <textarea id="message" rows="4" placeholder="How Can We Help You ?"></textarea>
+        <button type="submit">Bientôt Disponible</button>
+    </form>
 </div>
 
 <!--== CONTACT FORM
@@ -91,7 +101,7 @@
 </div>
 </div>
 </div>
-==-->
+
 
 <!--== FOOTER ==-->
 <footer class="footer">
@@ -106,6 +116,24 @@
     </div>
     <p>&#169; <span id="date"></span>2022 copyright all right reserved</p>
 </footer>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+    function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "cubeizi.be@gmail.com",
+        Password : "jean-michelle7845",
+        To : 'cubeizi.be@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Questions From CryptoExtension",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    ); 
+}
+</script>
 
 <script src="../Js/main.js"></script>
 </body>

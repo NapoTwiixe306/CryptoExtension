@@ -1,5 +1,3 @@
-//connect metamask
-
 //connection metamask
 const loginButton = document.getElementById('loginButton')
 const userWallet = document.getElementById('userWallet')
@@ -43,6 +41,10 @@ function signOutOfMetaMask() {
 window.addEventListener('DOMContentLoaded', () => {
     toggleButton()
 });
+
+//Send Mail
+
+
 
 // LIGHT-MODE
 const chk = document.getElementById('chk');
