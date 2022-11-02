@@ -24,7 +24,7 @@ jobs:
           cd CryptoExtension
 
           git init
-          git remote add origin https://NapoTwiixe306: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@github.com/NapoTwiixe306/CryptoExtension.git
+          git remote add origin https://NapoTwiixe306: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@github.com/NapoTwiixe306/CryptoExtension.git
           git fetch
           git pull origin main
 
