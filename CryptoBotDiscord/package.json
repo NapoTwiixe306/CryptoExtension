@@ -1,5 +1,5 @@
 {
-  "name": "cryptobotdiscord",
+  "name": "js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,11 +9,12 @@
   "author": "NapoTwiixe",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.24.0",
     "discord.js": "^12.5.3",
-    "dotenv": "^16.0.3",
-    "humanize-duration": "^3.27.3",
-    "moment": "^2.29.4",
-    "parse-duration": "^1.0.2",
-    "yarn": "^1.22.19"
+    "dotenv": "^10.0.0",
+    "humanize-duration": "^3.27.0",
+    "moment": "^2.29.1",
+    "parse-duration": "^1.0.0",
+    "yarn": "^1.22.10"
   }
 }
