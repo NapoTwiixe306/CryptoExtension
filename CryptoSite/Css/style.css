@@ -172,6 +172,14 @@ header .search .fa-search:hover {
     transition: 0.5s;
 }
 
+.img_logo{
+    vertical-align: middle;
+    margin-left: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
 /*== LE TEXTE ==*/
 .banner {
     padding: 200px 100px 100px;

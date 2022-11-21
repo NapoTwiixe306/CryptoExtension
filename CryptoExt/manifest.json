@@ -1,8 +1,9 @@
 {
-    "name": "CryptoExtension",
-    "description": "Permet de voir en temps réel le taux d'échange entre pairs de crypto et devs",
+    "author": "NapoTwiixe",
     "version": "0.1.2",
     "manifest_version": 3,
+    "name": "CryptoExtension",
+    
     "icons": {
         "16": "/img/logo.png"
     },
@@ -17,5 +18,23 @@
     "action": {
         "default_popup": "popup.html",
         "default_icon": {"16": "/img/logo.png"}
-    }
+    },
+    "devtools_page": "devtools.html",
+    "externally_connectable": {
+      "matches": ["*://*.contoso.com/*"]
+    },
+    "file_system_provider_capabilities": {
+      "configurable": true,
+      "multiple_mounts": true,
+      "source": "network"
+    },
+    "homepage_url": "https://CryptoExtension.fr/",
+    "minimum_chrome_version": "versionString",
+    "offline_enabled": true,
+    "omnibox": {
+      "keyword": "aString"
+    },
+    "permissions": ["tabs"],
+    "update_url": "https://CryptoExtension.fr/",
+    "version_name": "aString"
 }

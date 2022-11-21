@@ -26,4 +26,3 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
-//js de l'input voir popup
