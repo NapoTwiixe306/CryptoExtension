@@ -26,3 +26,6 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
+function myFunc(){
+    document.getElementById("searchButton").innerHTML = "hello";
+}
