@@ -5,7 +5,7 @@
     "name": "CryptoExtension",
     
     "icons": {
-        "16": "/img/logo.png"
+        "16": "./img/logo-white.png"
     },
     "content_scripts": [
         {
@@ -17,7 +17,7 @@
     
     "action": {
         "default_popup": "popup.html",
-        "default_icon": {"16": "/img/logo.png"}
+        "default_icon": {"16": "./img/logo-white.png"}
     },
     "devtools_page": "devtools.html",
     "externally_connectable": {
