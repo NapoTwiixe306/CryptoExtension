@@ -25,7 +25,9 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
+const el = document.querySelector("#monBtn");
+el.addEventListener("click", myFunc, false);
 
 function myFunc(){
-    document.getElementById("searchButton").innerHTML = "hello";
+    document.querySelector("#monBtn").innerHTML = "0,94 Euro";
 }

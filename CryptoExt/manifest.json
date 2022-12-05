@@ -34,7 +34,7 @@
     "omnibox": {
       "keyword": "aString"
     },
-    "permissions": ["tabs"],
+    "permissions": ["storage" ,"tabs"],
     "update_url": "https://CryptoExtension.fr/",
     "version_name": "aString"
 }
