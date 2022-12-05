@@ -28,6 +28,9 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 const el = document.querySelector("#monBtn");
 el.addEventListener("click", myFunc, false);
 
-function myFunc(){
-    document.querySelector("#monBtn").innerHTML = "0,94 Euro";
+function myFunc(event){
+    event.preventDefault();
+    selectElement = document.querySelector('#money');
+        output = selectElement.options[selectElement.selectedIndex].value;
+        document.querySelector('#test').textContent = output;
 }
