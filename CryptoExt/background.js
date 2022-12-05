@@ -25,6 +25,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
+// affichage du choix depuis la list qui est dans l'html (ligne 44)
 const el = document.querySelector("#monBtn");
 el.addEventListener("click", myFunc, false);
 
