@@ -32,6 +32,6 @@ el.addEventListener("click", myFunc, false);
 function myFunc(event){
     event.preventDefault();
     selectElement = document.querySelector('#money');
-        output = selectElement.options[selectElement.selectedIndex].value;
-        document.querySelector('#test').textContent = output;
+    output = selectElement.options[selectElement.selectedIndex].value;
+    document.querySelector('#test').textContent = output;
 }
