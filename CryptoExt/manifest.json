@@ -29,12 +29,9 @@
       "source": "network"
     },
     "homepage_url": "https://CryptoExtension.fr/",
-    "minimum_chrome_version": "versionString",
     "offline_enabled": true,
     "omnibox": {
       "keyword": "aString"
     },
-    "permissions": ["storage" ,"tabs"],
-    "update_url": "https://CryptoExtension.fr/",
-    "version_name": "aString"
-}
+    "permissions": ["storage" ,"tabs"]
+    }

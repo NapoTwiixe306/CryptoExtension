@@ -39,40 +39,26 @@
             <section class="home bd-grid" id="home">
                 <div class="home__data">
                     <h1 class="home__title"><span class="home__title-color">Choisissez la crypto ou devise de votre choix</span><br> <span class="home__title-color"></span></h1>
-                    <select id="crypto-select" class="">
+                    <p style="font-size: 20px;">TOUTES les crypto, sont en USDT (Tether)</p><br>
+                    <select id="crypto-select" class="select-crypto">
                         <option value="BTCUSDT">Bitcoin</option>
                         <option value="ETHUSDT">Ethereum</option>
                         <option value="XRPUSDT">Ripple</option>
-                        <!-- Add more options here for other cryptocurrencies -->
+                        <option value="BNBUSDT">Binance Coin</option>
+                        <option value="ADAUSDT">Cardano</option>
+                        <option value="DOTUSDT">Polkadot</option>
+                        <option value="SOLUSDT">Solana</option>
+                        <option value="UNIUSDT">UniSwap</option>
+                        <option value="ALGOUSDT">Algo</option>
                       </select>
                       
-                      <!-- Create a button for triggering the price tracking function 
-                      <button onclick="trackCryptoPrice(document.getElementById('crypto-select').value)">
-                        Track Price
-                      </button>-->
-                      
-                      <button id="monBtn" class="button">Track Price</button>
-                    
+                      <button id="monBtn" class="button-crypto">Track Price</button>                    
                       <!-- Create an element for displaying the current price of the selected cryptocurrency -->
-                      <p id="crypto-price"></p>
                     </div>
-
+                    <p id="crypto-price" class="crypto-result"></p>
             </section>
         <!--===== Explication =====-->
-        <section class="about_section " id="about">
-            <h2 class="section-title">Un FeedBack ?</h2>
-            <div class="about__container bd-grid"> 
-                <div>
-                    <h2 class="about__subtitle">Un commantaire...</h2>
-                    <p class="about__text">Si vous désirez me laisser un commantaire, ou feedback</p>
-                    <p class="about__text">N'hésitez pas a le faire depuis le site, ou bien depuis le store de google chrome, toutes remarque constructive sera appréciez</p>           
-                </div> 
-                <div class="about__img">
-                    <img src="./img/logo-white.png" alt="">
-                </div>                                 
-            </div>
-        </section>   
-
+        
         <!--===== FOOTER =====-->
         <footer class="footer"> 
             <p class="footer__title">CryptoExtension</p>

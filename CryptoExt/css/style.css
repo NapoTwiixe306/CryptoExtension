@@ -344,6 +344,39 @@ img{
   margin-left: auto;
 }
 
+
+/*==== EXTENSION ====*/
+.select-crypto{
+  text-align: center;
+  height: 50px;
+  width: 90;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 25px;
+}
+
+.crypto-result{
+  text-align: center;
+  color: black;
+  font-size: 22px;
+  
+}
+
+/*==== BUTTON-CRYPTO ====*/
+.button-crypto{
+  border: none;
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .95rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: .5rem;
+  font-size: 15px;
+}
+.button-crypto:hover{
+  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+}
+
 /* ===== FOOTER =====*/
 .footer{
   background-color: var(--second-color);
