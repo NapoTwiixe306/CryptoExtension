@@ -26,12 +26,22 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 // affichage du choix depuis la list qui est dans l'html (ligne 44)
-const el = document.querySelector("#monBtn");
-el.addEventListener("click", myFunc, false);
-
-function myFunc(event){
-    event.preventDefault();
-    selectElement = document.querySelector('#money');
-    output = selectElement.options[selectElement.selectedIndex].value;
-    document.querySelector('#test').textContent = output;
-}
+  const button = document.getElementById("monBtn")
+  button.addEventListener('click', async () => { 
+      //selectElement = document.querySelector('#crypto-select')
+      const crypto = document.getElementById('crypto-select').value;
+  
+      // Use the Binance API to fetch the current price of the specified cryptocurrency
+      const apiUrl = `https://api.binance.com/api/v3/ticker/price?symbol=${crypto}`;
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+      const price = data.price;
+    
+      // Update the HTML element with the id "crypto-price" with the current price
+      const priceEl = document.getElementById('crypto-price');
+      priceEl.innerHTML = `le ${crypto} est a ` +  price + '$';
+  
+      //output = selectElement.options[selectElement.selectedIndex].value;
+      //document.querySelector('#crypto-price').textContent = output;
+  })
+  

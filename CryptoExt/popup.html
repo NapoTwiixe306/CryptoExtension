@@ -39,19 +39,22 @@
             <section class="home bd-grid" id="home">
                 <div class="home__data">
                     <h1 class="home__title"><span class="home__title-color">Choisissez la crypto ou devise de votre choix</span><br> <span class="home__title-color"></span></h1>
-                    <form class="forex" action="#">
-                        <label for="lang">Crypto/FOREX</label>
-                        <select class="crypto" name="languages" id="money">
-                          <option value="L'USD vaux 0,94€">USD</option>
-                          <option value="le JPY vaux 0,0070€">JPY</option>
-                          <option value="le prix du BTC est de 16 136,40 €">BTC</option>
-                          <option value="le BNB vaux 274,14€">BNB</option>
-                          <option value="L'ETH vaux 1 191,98€">ETH</option>
-                          <option value="le CAD vaux 0,70€">CAD</option>
-                          <option value="L'ADA vaux 0,30€">ADA</option>
-                        </select>
-                        <button id='monBtn' class="button">Voir la valeur</button>
-                        <p id="test"></p>
+                    <select id="crypto-select" class="">
+                        <option value="BTCUSDT">Bitcoin</option>
+                        <option value="ETHUSDT">Ethereum</option>
+                        <option value="XRPUSDT">Ripple</option>
+                        <!-- Add more options here for other cryptocurrencies -->
+                      </select>
+                      
+                      <!-- Create a button for triggering the price tracking function 
+                      <button onclick="trackCryptoPrice(document.getElementById('crypto-select').value)">
+                        Track Price
+                      </button>-->
+                      
+                      <button id="monBtn" class="button">Track Price</button>
+                    
+                      <!-- Create an element for displaying the current price of the selected cryptocurrency -->
+                      <p id="crypto-price"></p>
                     </div>
 
             </section>
