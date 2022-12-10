@@ -34,13 +34,10 @@ ici, je vais vous expliquer le code javascript utilisé pour afficher le prix de
   })
 ```
 
-## Contributing
+## Choix des langages et technologies
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+pour l'extension j'avais le choix entre React js ou de l'Html/css/javascript pur, mon choix c'est porter sur l'Html/css/javascript car ce sont des langages que je maitrise beaucoup mieux, et qui sont plus faciles à mettre à jour, 
 
-Please make sure to update tests as appropriate.
+Le manifest Json lui, est en version3 car google le demandé, ce fichier contient toutes les requêtes utiles ont google
 
-## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
